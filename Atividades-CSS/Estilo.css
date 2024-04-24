@@ -1,0 +1,151 @@
+.header, ul, li, p{
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    background: black;
+    
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    margin-left: 10px;
+}
+.menu li a{
+    display: block;
+    padding: 10px;
+}
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.wrapper > *{
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+
+.footer{
+    background: black;
+    height: auto;
+    color: white;
+    
+    
+}
+.main{
+    background: black;
+    color: white;
+    height: auto;
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+.aside1{
+    background: lightslategray;
+    top: 0;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    
+}
+.aside a{
+    color: black;
+}
+.form{
+    background: whitesmoke;
+    height: auto;
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: black;
+    border-radius: 5px;
+}
+
+
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+
+.campo {
+    margin-bottom: 10px;
+}
+
+.campo label {
+    margin-bottom: 10px;
+    color: black;
+    display: block;
+}
+
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 10px;
+}
+
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 20px;
+    border: 1px solid black;
+    display: block;
+}
+
+.campo select option {
+    padding-right: 10px;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: whitesmoke;
+}
+
+.botao, select{
+    cursor: pointer;
+}
+@media all and (min-width: 800px){
+    .main{
+        flex: 2;
+    }
+    .aside1{
+        order: 2;
+    }
+    .main{
+        order: 1;
+    }
+    .form{
+        order: 3;
+    }
+    .footer{
+        order: 4;
+    }
+}
+@media all and (min-width:600px){
+
+    .aside{
+        flex: 1;
+    }
+}
+ 
